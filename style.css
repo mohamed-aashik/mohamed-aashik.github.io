@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+    --color-box-shadow:lightgrey;
+    --color-terminal:white;
+    --color-bg:linear-gradient(red, yellow);
+    --color-interchange:black;
+  }
+.theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+    --color-box-shadow:none;
+    --color-terminal:black;
+    --color-interchange:black;
+
+
+}
+
+.page
+{
+    height: 100vh;
+    background-image: linear-gradient(#12cdea, var(--color-interchange));;
+}
+
+.profile-img
+{
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    #window {
+        height: 50vh;
+      width: 80vw;
+    }   
+  }

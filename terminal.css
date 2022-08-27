@@ -1,0 +1,81 @@
+#window {
+    margin: 0 auto;
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid var(--color-opp);
+    border-radius: 5px;
+    background-color: var(--color-terminal);
+
+}   
+
+#operationsBar {
+    height: 30px;
+    background-color: lightgrey;
+}
+#operations {
+    float: left;
+}
+.optBtn {
+    border-radius: 50%;
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#title {
+    position: relative;
+margin-left: 40%;
+padding-top: 8px;
+color: dimgrey;
+}
+
+#terminal {
+    padding-left: 6px;
+padding-top: 10px;
+color: dimgrey;
+}
+#close {
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+#minimize {
+    border: 1px solid orange;
+    background-color: orange;
+}
+#resize {
+    border: 1px solid limegreen;
+    background-color: limegreen;
+}
+#blinker{
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    background-color: dimgrey;
+    position: relative;
+-webkit-animation: blink 0.8s infinite;
+line-height: 17px;
+}
+@-webkit-keyframes blink {
+  0% {background: lightgrey}
+  50% {background: dimgrey}
+  100% {background: lightgrey}
+}
+#prompt{
+    /*position: absolute;*/
+    float: left;
+    margin-right: 3px;
+}
+#data {
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    #window {
+        height: 50vh;
+      width: 80vw;
+    }
+   
+  }
